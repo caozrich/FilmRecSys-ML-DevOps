@@ -1,4 +1,5 @@
 import ast
+import joblib
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI
@@ -228,13 +229,13 @@ async def recomendacion(selected_title:str):
     Ejemplo de uso:
     > Batman
 
-    """ 
-
+    """
     k = 6
-    df_r['genres'] = df_r['genres'].apply(ast.literal_eval)
-    df_r['genres_str'] = df_r['genres'].apply(lambda x: '|'.join(x))
-    encoder = OneHotEncoder()
-    encoder.fit(df_r[['genres_str']])
+    df_genres = pd.read_csv('data/genres_str.csv')
+    df_r['genres_str'] = df_genres['genres_str']
+
+    encoder = joblib.load('data/encoder.pkl')
+ 
     genres_encoded = encoder.transform(df_r[['genres_str']])
     generos_df = pd.DataFrame(genres_encoded.toarray(), columns=encoder.get_feature_names_out(['genres_str']))
     selected_genres = df_r.loc[df_r['title'] == selected_title]['genres'].values[0]
