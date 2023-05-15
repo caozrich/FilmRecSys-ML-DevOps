@@ -258,7 +258,7 @@ async def test(selected_title:str):
     """ 
     df = df_r
     k = 6
-    generos_df = pd.read_csv('genres_binary.csv', index_col=0).astype('float32')
+    generos_df = pd.read_csv('data/genres_binary.csv', index_col=0).astype('float32')
 
     selected_genres = df.loc[df['title'] == selected_title]['genres'].values[0]
     df['genre_similarity'] = df['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x)))
