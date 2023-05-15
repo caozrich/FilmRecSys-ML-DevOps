@@ -14,7 +14,7 @@ app  = FastAPI(
 )
 
 
-# df   = pd.read_csv('data/movies_dataset_cleaned.csv') 
+df   = pd.read_csv('data/movies_dataset_cleaned.csv') 
 df_r = pd.read_csv('data/movies_dataset_reduced.csv') 
 
 
@@ -250,8 +250,27 @@ async def recomendacion(selected_title:str):
     recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
     return {'lista recomendada': recommended_movies[0:5]}
         
+@app.get("/test/{selected_title}")
+async def test(selected_title:str):
+    """ 
+    Esta función toma el título de una película como entrada y devuelve una lista de las 5 películas más recomendadas basadas en similitud y puntaje utilizando el algoritmo KNN.
+    
+    """ 
+    df = df_r
+    k = 6
+    generos_df = pd.read_csv('genres_binary.csv', index_col=0).astype('float32')
 
-
+    selected_genres = df.loc[df['title'] == selected_title]['genres'].values[0]
+    df['genre_similarity'] = df['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x)))
+    df['same_series'] = df['title'].apply(lambda x: 1 if 'Batman' in x else 0)
+    features_df = pd.concat([generos_df, df['vote_average'], df['genre_similarity'], df['same_series']], axis=1)
+    knn = NearestNeighbors(n_neighbors=k+1, algorithm='auto')
+    knn.fit(features_df)
+    indices = knn.kneighbors(features_df.loc[df['title'] == selected_title])[1].flatten()
+    recommended_movies = list(df.iloc[indices]['title'])
+    recommended_movies = sorted(recommended_movies, key=lambda x: (df.loc[df['title'] == x]['same_series'].values[0], df.loc[df['title'] == x]['vote_average'].values[0], df.loc[df['title'] == x]['genre_similarity'].values[0]), reverse=True)
+    recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
+    return recommended_movies[0:5]
 # import asyncio
 
 # async def main():
