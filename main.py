@@ -14,7 +14,7 @@ app  = FastAPI(
 )
 
 
-df   = pd.read_csv('data/movies_dataset_cleaned.csv') 
+# df   = pd.read_csv('data/movies_dataset_cleaned.csv') 
 df_r = pd.read_csv('data/movies_dataset_reduced.csv') 
 
 
