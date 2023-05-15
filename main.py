@@ -232,12 +232,7 @@ async def recomendacion(selected_title:str):
 
     """
     k = 6
-    df_genres = pd.read_csv('data/genres_str.csv')
-    df_r['genres_str'] = df_genres['genres_str']
 
-    encoder = joblib.load('data/encoder.pkl')
- 
-    genres_encoded = encoder.transform(df_r[['genres_str']])
     generos_df = pd.read_pickle('data/generos_df.pkl') # generos_df = pd.DataFrame(genres_encoded.toarray(), columns=encoder.get_feature_names_out(['genres_str']))
     selected_genres = df_r.loc[df_r['title'] == selected_title]['genres'].values[0]
     df_r['genre_similarity'] = df_r['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x)))
