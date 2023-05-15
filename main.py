@@ -29,8 +29,8 @@ async def peliculas_mes(mes:str):
     Retorna:
     - Un diccionario con dos claves: 'mes' y 'cantidad'. 'mes' contiene el nombre del mes ingresado y 'cantidad' contiene el número de películas lanzadas en ese mes.
 
-    Ejemplo de uso:
-    >>> peliculas_mes('enero')
+    Ejemplo de uso: enero
+    >>> enero
 
     """ 
     
@@ -70,7 +70,7 @@ async def peliculas_dia(dia:str):
     - Un diccionario con dos claves: 'dia' y 'cantidad'. 'dia' contiene el nombre del día ingresado y 'cantidad' contiene el número de películas lanzadas en ese día de la semana.
 
     Ejemplo de uso:
-    >>> peliculas_dia('lunes')
+    >>> lunes
 
     """
             
@@ -112,7 +112,7 @@ async def franquicia(franquicia:str):
         - 'ganancia_promedio': float, el retorno promedio de la franquicia.
 
     Ejemplo de uso:
-    >>> franquicia('Pixar Animation Studios')
+    > Pixar Animation Studios
     """
     
     franquicia_data = df.loc[df['belongs_to_collection'] == franquicia]
@@ -136,8 +136,8 @@ async def peliculas_pais(pais:str):
     Retorna:
     - Un diccionario con dos claves: 'pais' y 'cantidad'. 'pais' contiene el nombre del país ingresado y 'cantidad' contiene la cantidad de películas producidas en ese país.
 
-    Ejemplo de uso:
-    >>> peliculas_pais('United States of America')
+    Ejemplo de uso: 
+    > United States of America
 
     """ 
     
@@ -167,7 +167,7 @@ async def productoras(productora:str):
         - 'cantidad': int, la cantidad de películas producidas por la productora.
 
     Ejemplo de uso:
-    >>> productoras('Warner Bros. Pictures')
+    > Warner Bros. Pictures
 
     """
     
@@ -201,7 +201,7 @@ async def retorno(pelicula:str):
         - 'año': int, el año de lanzamiento de la película.
 
     Ejemplo de uso:
-    >>> retorno('Toy Story 2')
+    > Toy Story 2
 
     """ 
         
@@ -226,7 +226,7 @@ async def recomendacion(selected_title:str):
     - Una lista de 5 películas recomendadas por similitud y puntaje.
 
     Ejemplo de uso:
-    >>> recomendacion3('Batman')
+    > Batman
 
     """ 
 
