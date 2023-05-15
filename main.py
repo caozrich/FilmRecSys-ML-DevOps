@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI
+from scipy.sparse import save_npz, load_npz
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import OneHotEncoder
 
