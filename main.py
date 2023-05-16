@@ -233,14 +233,20 @@ async def recomendacion(selected_title:str):
     generos_df = pd.read_csv('data/genres_binary.csv', index_col=0).astype('float32')
 
     selected_genres = df_r.loc[df_r['title'] == selected_title]['genres'].values[0]
-    df_r['genre_similarity'] = df_r['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x)))
-    features_df = pd.concat([generos_df, df_r['vote_average'], df_r['genre_similarity']], axis=1)
+    genre_weight = 2
+    same_series_weight = 3
+
+    df_r['genre_similarity'] = df_r['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x))) * genre_weight
+    df_r['same_series'] = df_r['title'].apply(lambda x: 1 if selected_title in x else 0) * same_series_weight
+
+    features_df = pd.concat([generos_df, df_r['vote_average'], df_r['genre_similarity'], df_r['same_series']], axis=1)
     knn = NearestNeighbors(n_neighbors=k+1, algorithm='auto')
     knn.fit(features_df)
     indices = knn.kneighbors(features_df.loc[df_r['title'] == selected_title])[1].flatten()
     recommended_movies = list(df_r.iloc[indices]['title'])
     recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
-    return {'lista recomendada': recommended_movies[0:5]}
+    
+    return recommended_movies[:5]
         
 
 # import asyncio
