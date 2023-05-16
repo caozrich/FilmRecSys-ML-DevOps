@@ -8,7 +8,7 @@
 
 ## Contenido
 - [Description](#Descripción del proyecto)
-- [About](#About)
+- [Pipeline](#Pipeline)
 - [Download](#Download)
 
 ## Descripción del proyecto
