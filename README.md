@@ -34,3 +34,13 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 <img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/0148eb2b-3380-47a9-a36d-0c10975cc86f" width="800" height="538"/>
 
 ## Extracción, Transformación y Carga (ETL):
+`EXTRACCIÓN DE DATOS`
+
+1. Preparación inicial de datos
+- Imports: Se importan las bibliotecas y módulos necesarios para el proyecto.
+- Eliminación de duplicados: Se verifica y elimina cualquier registro duplicado en el conjunto de datos.
+- Verificación de valores nulos: Se identifican las columnas que contienen valores nulos en el conjunto de datos.
+- Tratamiento de valores nulos: Se lleva a cabo un tratamiento para reemplazar o eliminar los valores nulos en las columnas relevantes.
+
+3. Ingesta de datos (Archivos .csv provistos por el cliente) en respectivos dataframes (Disney, Amazon, Hulu y Netflix)
+4. Análisis exploratorio de los distintos datasets para conocer sus características principales
