@@ -177,7 +177,7 @@ else:
 
 ### Se desarrolló una aplicación web con interfaz de recomendación de películas utilizando `Streamlit`, Los usuarios pueden ingresar el título de una película y recibir una lista de 5 películas recomendadas basadas en similitud y puntaje, Los algoritmos de aprendizaje automático del API se encargan de generar las recomendaciones. La interfaz es intuitiva y fácil de usar.
 
-###Uso
+### Uso
 1. Clona el repositorio a través de ``` https://github.com/YohanV1/TheMovieRecommender.git```  o descarga el repositorio.
  > Nota: La clonación del repositorio puede llevar algo de tiempo debido a que los conjuntos de datos son relativamente grandes.
 2. Instala las dependencias con ```pip install -r requirements.txt```.
