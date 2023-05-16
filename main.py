@@ -218,9 +218,9 @@ async def retorno(pelicula:str):
 
 
 @app.get("/recomendacion/{selected_title}")
-async def recomendacion(selected_title:str):
+async def recomendacion(selected_title: str):
     """ 
-    Esta función recibe el título de una película y devuelve una lista de 5 pelicula recomendadas por similitud y puntaje.
+    Esta función recibe el título de una película y devuelve una lista de 5 peliculas recomendadas por similitud y puntaje.
     
     Parámetros:
     - selected_title: str, el título de la película seleccionada.
@@ -232,20 +232,27 @@ async def recomendacion(selected_title:str):
     > Batman
 
     """
+    selected_title = selected_title.lower()  # Convertir el título ingresado a minúsculas 
+    
     k = 6
-    generos_df = pd.read_csv('data/genres_binary.csv', index_col=0).astype('float32')
+    generos_df = pd.read_csv('data/genres_binary.csv, index_col=0).astype('float32')
 
-    selected_genres = df_r.loc[df_r['title'] == selected_title]['genres'].values[0]
+    df_r['title_lower'] = df_r['title'].str.lower()  # Convertir los valores de "title" a minúsculas
+    selected_genres = df_r.loc[df_r['title_lower'] == selected_title]['genres'].values
+    if len(selected_genres) == 0:
+        return {'error': 'Película no encontrada'}
+    
+    selected_genres = selected_genres[0]
     genre_weight = 2
     same_series_weight = 3
 
     df_r['genre_similarity'] = df_r['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x))) * genre_weight
-    df_r['same_series'] = df_r['title'].apply(lambda x: 1 if selected_title in x else 0) * same_series_weight
+    df_r['same_series'] = df_r['title_lower'].apply(lambda x: 1 if selected_title in x else 0) * same_series_weight
 
     features_df = pd.concat([generos_df, df_r['vote_average'], df_r['genre_similarity'], df_r['same_series']], axis=1)
     knn = NearestNeighbors(n_neighbors=k+1, algorithm='auto')
     knn.fit(features_df)
-    indices = knn.kneighbors(features_df.loc[df_r['title'] == selected_title])[1].flatten()
+    indices = knn.kneighbors(features_df.loc[df_r['title_lower'] == selected_title])[1].flatten()
     recommended_movies = list(df_r.iloc[indices]['title'])
     recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
     
