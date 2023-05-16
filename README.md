@@ -36,10 +36,22 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 ## Extracción, Transformación y Carga (ETL):
 `1. Preparación inicial de datos`
 
-- Imports: Se importan las bibliotecas y módulos necesarios para el proyecto.
+- Imports y Carga de Datos: Se importan las bibliotecas y módulos necesarios para el proyecto, y se carga el conjunto de datos desde un archivo CSV.
 - Eliminación de duplicados: Se verifica y elimina cualquier registro duplicado en el conjunto de datos.
 - Verificación de valores nulos: Se identifican las columnas que contienen valores nulos en el conjunto de datos.
 - Tratamiento de valores nulos: Se lleva a cabo un tratamiento para reemplazar o eliminar los valores nulos en las columnas relevantes.
 
-3. Ingesta de datos (Archivos .csv provistos por el cliente) en respectivos dataframes (Disney, Amazon, Hulu y Netflix)
+`3. Ingesta de datos (Archivos .csv provistos por el cliente) en respectivos dataframes (Disney, Amazon, Hulu y Netflix)`
+
+- Eliminar columnas que no se utilizarán: Se eliminan del conjunto de datos aquellas columnas que no son relevantes para el análisis o el modelo de recomendación. Esto ayuda a reducir la dimensionalidad y enfocarse en las características más importantes.
+
+- Eliminar filas con valores faltantes en el campo 'release_date': Se eliminan las filas que tienen valores faltantes en el campo 'release_date'. Esto garantiza que todas las películas tengan una fecha de lanzamiento válida para su análisis y recomendación.
+
+- Convertir 'release_date' al formato de fecha (AAAA-mm-dd): Se convierte la columna 'release_date' al formato de fecha estándar (AAAA-mm-dd). Esto permite un manejo más conveniente y consistente de las fechas en el conjunto de datos.
+
+- Extraer el año de la fecha de estreno y crear una nueva columna 'release_year': Se extrae el año de la fecha de estreno y se crea una nueva columna llamada 'release_year'. Esta columna proporciona una representación simplificada del año de lanzamiento de cada película.
+
+- Conversión de tipos de datos: Se realiza la conversión de los tipos de datos de ciertas columnas numéricas que pueden convertirse a tipos de datos numéricos apropiados para un análisis más preciso.
+
+Crear una nueva columna 'return' que calcule el retorno de inversión (revenue / budget): Se crea una nueva columna llamada 'return' que calcula el retorno de inversión dividiendo los ingresos ('revenue') por el presupuesto ('budget'). Esta columna proporciona información sobre la rentabilidad de cada película y puede ser útil para el proceso de recomendación.
 4. Análisis exploratorio de los distintos datasets para conocer sus características principales
