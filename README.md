@@ -151,9 +151,9 @@ A continuación, se describen las funciones disponibles en el API:
     Descripción: Esta función recibe el título de una película y devuelve una lista de 5 pelicula recomendadas por similitud y puntaje.
     Parámetros.
 
-## DEPLOYMENT DEL API
+## Deployment del API
 
-###El deployment del API se realizó utilizando el servicio web [Render]( https://render.com/), el cual facilita la implementación ya que no necesita dockerizacion.
+### El deployment del API se realizó utilizando el servicio web [Render]( https://render.com/), el cual facilita la implementación ya que no necesita dockerizacion.
 
 - El API puede ser consumido desde el siguiente enlace: https://pimlops-richardl.onrender.com
 - Documentación del API: https://pimlops-richardl.onrender.com/docs
@@ -173,4 +173,14 @@ if response.status_code == 200:
 else:
     print("Error en la solicitud:", response.status_code)
 ```
+## Aplicación Web:
+
+### Se desarrolló una aplicación web con interfaz de recomendación de películas utilizando `Streamlit`, Los usuarios pueden ingresar el título de una película y recibir una lista de 5 películas recomendadas basadas en similitud y puntaje, Los algoritmos de aprendizaje automático del API se encargan de generar las recomendaciones. La interfaz es intuitiva y fácil de usar.
+
+###Uso
+1. Clona el repositorio a través de ``` https://github.com/YohanV1/TheMovieRecommender.git```  o descarga el repositorio.
+ > Nota: La clonación del repositorio puede llevar algo de tiempo debido a que los conjuntos de datos son relativamente grandes.
+2. Instala las dependencias con ```pip install -r requirements.txt```.
+3. Se incluye una clave API con este proyecto. Si deseas utilizar tu propia clave API, puedes obtener una en  [TMDB's API](https://developers.themoviedb.org/3/getting-started/introduction). Reemplaza todo desde  ```api_key=```.
+4. Ejecuta la aplicación con streamlit run streamlit_app.py. La aplicación se abrirá en tu navegador web local.
 
