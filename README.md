@@ -7,11 +7,11 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
 ## Contenido
-- [Description](#Descripción del proyecto)
+- [Description](#Descripcion del proyecto)
 - [Pipeline](#Pipeline)
 - [Download](#Download)
 
-## Descripción del proyecto
+## Descripcion del proyecto
 
 Este proyecto tiene como objetivo implementar un sistema de recomendación de películas utilizando técnicas de `Machine Learning Operations (MLOps)`. Se aborda el desafío de llevar el modelo de recomendación al mundo real y asegurar un ciclo de vida completo para el proyecto de Machine Learning.
 
