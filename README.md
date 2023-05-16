@@ -18,3 +18,10 @@ El contexto de este proyecto se encuentra en una start-up que ofrece servicios d
 
 ### Rol a Desarrollar
 Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data Engineering para tratar y recolectar los datos existentes. Esto implica realizar procesos de transformación, automatizar la actualización de nuevos datos y asegurar la calidad de los mismos. El objetivo es desarrollar un Minimum Viable Product (MVP), lo que requiere un trabajo rápido y eficiente en la ingeniería de datos.
+
+##Objetivos del Proyecto
+- Realizar el proceso de Extracción, Transformación y Carga (ETL) de los datos de películas disponibles.
+- Realizar un Análisis Exploratorio de Datos (EDA) para comprender las características y calidad de los datos.
+- Implementar funciones de recomendación basadas en técnicas de Machine Learning. 
+- Desplegar un servicio web (API) para acceder al modelo de recomendación de películas.
+- Desarrollar una aplicación web que consuma el API y ofrezca una interfaz amigable para los usuarios.
