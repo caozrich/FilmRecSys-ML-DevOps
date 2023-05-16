@@ -112,16 +112,17 @@ async def franquicia(franquicia:str):
         - 'ganancia_promedio': float, el retorno promedio de la franquicia.
 
     Ejemplo de uso:
-    > Pixar Animation Studios
+    >>> franquicia('Pixar Animation Studios')
     """
+    
     df.dropna(subset=['belongs_to_collection'], inplace=True)
-    df.dropna(subset=['return'], inplace=True)
-    franquicia_data = df.loc[df['belongs_to_collection'] == franquicia]
-    cantidad = float(len(franquicia_data))
-    ganancia_total = round(float(franquicia_data['return'].sum()), 2)
-    ganancia_promedio = round(float(franquicia_data['return'].mean()), 2)
-
-    return {'franquicia': franquicia, 'cantidad': cantidad, 'ganancia_total': ganancia_total, 'ganancia_promedio': ganancia_promedio}
+    f_bajo= franquicia.lower()
+    fran= df[['belongs_to_collection','budget','revenue',]].dropna(subset=['belongs_to_collection'])
+    fran= fran[fran['belongs_to_collection'].map(str.lower).apply(lambda x: f_bajo in x)]
+    cantidad = fran.shape[0]
+    gananciat= (fran['revenue']- fran['budget']).sum()
+    gananciap= (fran['revenue']- fran['budget']).mean()
+    return {'franquicia': franquicia, 'cantidad': cantidad, 'ganancia_total':gananciat, 'ganancia_promedio': gananciap}
 
 
 
