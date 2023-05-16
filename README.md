@@ -107,8 +107,42 @@ vote_average - popularity: 0.148352941806674
 - Se observa una relación significativa entre el presupuesto y las ganancias de las películas, así como entre las ganancias y la popularidad. Estas correlaciones indican que, en general, a medida que aumenta el presupuesto invertido en una película, también tienden a aumentar las ganancias generadas por la misma. Además, existe una tendencia a que las películas más populares sean las que generan mayores ganancias.
 
 
-##Funciones de Recomendación:
+##Desarrollo del API
 
-Explicación de las técnicas y algoritmos utilizados para generar las recomendaciones.
-Detalles sobre cómo se entrenó el modelo de recomendación.
-Información sobre las métricas de evaluación utilizadas y el rendimiento del modelo.
+Para disponibilizar los datos de la empresa, se propone utilizar el framework FastAPI para crear una API. Se han desarrollado varias funciones que corresponden a diferentes endpoints que se consumirán en la API. Cada función está decorada con el decorador @app.get('/') para indicar la ruta del endpoint.
+
+A continuación, se describen las funciones disponibles en el API:
+
+### 1. Obtener cantidad de películas estrenadas por mes
+Endpoint: `/peliculas_mes/{mes}`
+
+Descripción: Esta función recibe como parámetro el nombre del mes (por ejemplo, 'enero') y retorna la cantidad de películas que se estrenaron históricamente en ese mes.
+
+### 2. Obtener cantidad de películas estrenadas por día de la semana
+Endpoint: `/peliculas_dia/{dia}`
+
+Descripción: Esta función recibe como parámetro el día de la semana (por ejemplo, 'lunes') y retorna la cantidad de películas que se estrenaron históricamente en ese día.
+
+### 3. Obtener información de una franquicia
+Endpoint: `/franquicia/{franquicia}`
+
+Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
+
+### 4. Obtener cantidad de películas producidas en un país
+Endpoint: `/peliculas_pais/{pais}`
+
+Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
+
+### 5. Obtener información de una productora
+Endpoint: `/productoras/{productora}`
+
+Descripción: Esta función recibe como parámetro el nombre de una productora y retorna la ganancia total y la cantidad de películas producidas por esa productora.
+
+### 6. Obtener información de retorno de una película
+Endpoint: `/retorno/{pelicula}`
+
+Descripción: Esta función recibe como parámetro el nombre de una película y retorna la inversión, la ganancia, el retorno y el año en que se lanzó.
+
+### 7. Obtener información de retorno de una película
+Endpoint: /retorno/{pelicula}
+
