@@ -25,3 +25,7 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 - Implementar funciones de recomendación basadas en técnicas de Machine Learning. 
 - Desplegar un servicio web (API) para acceder al modelo de recomendación de películas.
 - Desarrollar una aplicación web que consuma el API y ofrezca una interfaz amigable para los usuarios.
+
+## Pipeline
+
+<img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/782538f7-6fe1-42c7-a841-1050ab696151" width="600" height="338"/>
