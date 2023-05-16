@@ -116,9 +116,9 @@ async def franquicia(franquicia:str):
     """
     
     franquicia_data = df.loc[df['belongs_to_collection'] == franquicia]
-    cantidad = len(franquicia_data)
-    ganancia_total = franquicia_data['return'].sum()
-    ganancia_promedio = franquicia_data['return'].mean()
+    cantidad = float(len(franquicia_data))
+    ganancia_total = float(franquicia_data['return'].sum())
+    ganancia_promedio = float(franquicia_data['return'].mean())
     
     return {'franquicia': franquicia, 'cantidad': cantidad, 'ganancia_total': ganancia_total, 'ganancia_promedio': ganancia_promedio}
 
