@@ -9,7 +9,7 @@
 ## Contenido
 - [Description](#Descripción)
 - [Pipeline](#Pipeline)
-- [ETL](#Análisis-Exploratorio-de-Datos-(EDA):)
+- [ETL](#Extracción,-Transformación-y-Carga-(ETL):)
 - [Download](#Download)
 - [Download](#Download)
 - [Download](#Download)
