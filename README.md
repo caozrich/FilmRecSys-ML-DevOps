@@ -136,7 +136,7 @@ A continuación, se describen las funciones disponibles en el API:
    Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
 
 * Obtener cantidad de películas producidas en un país
-   * Endpoint: `/peliculas_pais/{pais}` (https://pimlops-richardl.onrender.com/pelipeliculas_paisulas_pais/United%20States%20of%20America)
+   * Endpoint: `/peliculas_pais/{pais}` (https://pimlops-richardl.onrender.com/peliculas_pais/United%20States%20of%20America)
 
    Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
 
