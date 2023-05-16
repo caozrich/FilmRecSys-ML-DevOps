@@ -17,7 +17,7 @@ Este proyecto tiene como objetivo implementar un sistema de recomendación de pe
 
 ### Descripción del Problema
 
-El contexto de este proyecto se encuentra en una start-up que ofrece servicios de agregación de plataformas de streaming. Como `Data Scientist`, el rol consiste en desarrollar un sistema de recomendación que aún no ha sido implementado. El desafío es transformar los [datos disponibles](https://github.com/caozrich/FilmRecSys-ML-DevOps/tree/main/data), que presentan problemas de madurez, en un formato adecuado para el entrenamiento y mantenimiento del modelo de Machine Learning.
+El contexto de este proyecto se encuentra en una start-up que ofrece servicios de agregación de plataformas de streaming. Como Data Scientist, el rol consiste en desarrollar un sistema de recomendación que aún no ha sido implementado. El desafío es transformar los [datos disponibles](https://github.com/caozrich/FilmRecSys-ML-DevOps/tree/main/data), que presentan problemas de madurez, en un formato adecuado para el entrenamiento y mantenimiento del modelo de Machine Learning.
 
 ### Rol a Desarrollar
 Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data Engineering` para tratar y recolectar los datos existentes. Esto implica realizar procesos de transformación, automatizar la actualización de nuevos datos y asegurar la calidad de los mismos. El objetivo es desarrollar un Minimum Viable Product (MVP), lo que requiere un trabajo rápido y eficiente en la ingeniería de datos.
@@ -45,15 +45,15 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 - Eliminar columnas que no se utilizarán: Se eliminan del conjunto de datos aquellas columnas que no son relevantes para el análisis o el modelo de recomendación. Esto ayuda a reducir la dimensionalidad y enfocarse en las características más importantes.
 
-- Eliminar filas con valores faltantes en el campo 'release_date': Se eliminan las filas que tienen valores faltantes en el campo 'release_date'. Esto garantiza que todas las películas tengan una fecha de lanzamiento válida para su análisis y recomendación.
+- Eliminar filas con valores faltantes en el campo 'release_date': Se eliminan las filas que tienen valores faltantes en el campo  `release_date`. Esto garantiza que todas las películas tengan una fecha de lanzamiento válida para su análisis y recomendación.
 
-- Convertir 'release_date' al formato de fecha (AAAA-mm-dd): Se convierte la columna 'release_date' al formato de fecha estándar (AAAA-mm-dd). Esto permite un manejo más conveniente y consistente de las fechas en el conjunto de datos.
+- Convertir 'release_date' al formato de fecha (AAAA-mm-dd): Se convierte la columna  `release_date` al formato de fecha estándar (AAAA-mm-dd). Esto permite un manejo más conveniente y consistente de las fechas en el conjunto de datos.
 
-- Extraer el año de la fecha de estreno y crear una nueva columna 'release_year': Se extrae el año de la fecha de estreno y se crea una nueva columna llamada 'release_year'. Esta columna proporciona una representación simplificada del año de lanzamiento de cada película.
+- Extraer el año de la fecha de estreno y crear una nueva columna `release_year`: Se extrae el año de la fecha de estreno y se crea una nueva columna llamada 'release_year'. Esta columna proporciona una representación simplificada del año de lanzamiento de cada película.
 
 - Conversión de tipos de datos: Se realiza la conversión de los tipos de datos de ciertas columnas numéricas que pueden convertirse a tipos de datos numéricos apropiados para un análisis más preciso.
 
-- Crear una nueva columna 'return' que calcule el retorno de inversión (revenue / budget): Se crea una nueva columna llamada 'return' que calcula el retorno de inversión dividiendo los ingresos ('revenue') por el presupuesto ('budget'). Esta columna proporciona información sobre la rentabilidad de cada película y puede ser útil para el proceso de recomendación.
+- Crear una nueva columna 'return' que calcule el retorno de inversión (revenue / budget): Se crea una nueva columna llamada `return` que calcula el retorno de inversión dividiendo los ingresos (`revenue`) por el presupuesto (`budget`). Esta columna proporciona información sobre la rentabilidad de cada película y puede ser útil para el proceso de recomendación.
 
 ### 3. Procesamiento de datos anidados
 
