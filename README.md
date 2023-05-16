@@ -29,3 +29,5 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 ## Pipeline
 
 <img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/782538f7-6fe1-42c7-a841-1050ab696151" width="800" height="538"/>
+
+## Extracción, Transformación y Carga (ETL):
