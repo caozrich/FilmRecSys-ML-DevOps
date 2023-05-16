@@ -23,11 +23,11 @@ El contexto de este proyecto se encuentra en una start-up que ofrece servicios d
 Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data Engineering` para tratar y recolectar los datos existentes. Esto implica realizar procesos de transformación, automatizar la actualización de nuevos datos y asegurar la calidad de los mismos. El objetivo es desarrollar un Minimum Viable Product (MVP), lo que requiere un trabajo rápido y eficiente en la ingeniería de datos.
 
 ## Objetivos del Proyecto
-- Realizar el proceso de Extracción, Transformación y Carga (ETL) de los datos de películas disponibles.
-- Realizar un Análisis Exploratorio de Datos (EDA) para comprender las características y calidad de los datos.
-- Implementar funciones de recomendación basadas en técnicas de Machine Learning. 
-- Desplegar un servicio web (API) para acceder al modelo de recomendación de películas.
-- Desarrollar una aplicación web que consuma el API y ofrezca una interfaz amigable para los usuarios.
+- [x] Realizar el proceso de Extracción, Transformación y Carga (ETL) de los datos de películas disponibles.
+- [x] Realizar un Análisis Exploratorio de Datos (EDA) para comprender las características y calidad de los datos.
+- [x] Implementar funciones de recomendación basadas en técnicas de Machine Learning. 
+- [x] Desplegar un servicio web (API) para acceder al modelo de recomendación de películas.
+- [x] Desarrollar una aplicación web que consuma el API y ofrezca una interfaz amigable para los usuarios.
 
 ## Pipeline
 
@@ -151,3 +151,8 @@ A continuación, se describen las funciones disponibles en el API:
     Descripción: Esta función recibe el título de una película y devuelve una lista de 5 pelicula recomendadas por similitud y puntaje.
     Parámetros.
 
+## DEPLOYMENT DEL API
+
+El deployment del API se realizó utilizando el servicio web [Render]( https://render.com/), el cual facilita la implementación ya que no necesita dockerizacion.
+
+https://pimlops-richardl.onrender.com
