@@ -248,29 +248,3 @@ async def recomendacion(selected_title:str):
     
     return {'lista recomendada': recommended_movies[0:5]}
         
-
-# import asyncio
-
-# async def main():
-#     result1 = await peliculas_mes("febrero")
-#     print(result1)
-    
-#     result2 = await peliculas_dia('miercoles')
-#     print(result2)
-    
-#     result3 = await franquicia('Toy Story Collection')
-#     print(result3)
-    
-#     result4 = await peliculas_pais('United States of America')
-#     print(result4)
-    
-#     result5 = await productoras('Pixar Animation Studios')
-#     print(result5)
-    
-#     result6 = await retorno('Toy Story')
-#     print(result6)
-    
-#     result7 = await recomendacion("Batman")
-#     print(result7)
-
-# asyncio.run(main())
