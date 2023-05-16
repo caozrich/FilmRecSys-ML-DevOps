@@ -10,10 +10,12 @@
 - [Description](#Descripción)
 - [Pipeline](#Pipeline)
 - [ETL](#Extracción-Transformación-y-Carga-ETL)
-- [Download](#Download)
-- [Download](#Download)
-- [Download](#Download)
-- 
+- [EDA](#Análisis-Exploratorio-de-Datos-EDA)
+- [API](#Desarrollo-del-API)
+- [API-Deployment](#Deployment-del-API)
+- [APP](#Aplicación-Web)
+- [Contribuciones](#Contribuciones)
+- [Contacto](#Contacto)
 ## Descripción 
 
 Este proyecto tiene como objetivo implementar un sistema de recomendación de películas utilizando técnicas de `Machine Learning Operations (MLOps)`. Se aborda el desafío de llevar el modelo de recomendación al mundo real y asegurar un ciclo de vida completo para el proyecto de Machine Learning.
