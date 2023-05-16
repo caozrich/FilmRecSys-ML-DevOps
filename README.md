@@ -105,3 +105,10 @@ vote_average - popularity: 0.148352941806674
 ```
 
 - Se observa una relación significativa entre el presupuesto y las ganancias de las películas, así como entre las ganancias y la popularidad. Estas correlaciones indican que, en general, a medida que aumenta el presupuesto invertido en una película, también tienden a aumentar las ganancias generadas por la misma. Además, existe una tendencia a que las películas más populares sean las que generan mayores ganancias.
+
+
+##Funciones de Recomendación:
+
+Explicación de las técnicas y algoritmos utilizados para generar las recomendaciones.
+Detalles sobre cómo se entrenó el modelo de recomendación.
+Información sobre las métricas de evaluación utilizadas y el rendimiento del modelo.
