@@ -114,7 +114,7 @@ async def franquicia(franquicia:str):
     Ejemplo de uso:
     > Pixar Animation Studios
     """
-    
+    df.dropna(subset=['belongs_to_collection'], inplace=True)
     franquicia_data = df.loc[df['belongs_to_collection'] == franquicia]
     cantidad = float(len(franquicia_data))
     ganancia_total = round(float(franquicia_data['return'].sum()), 2)
