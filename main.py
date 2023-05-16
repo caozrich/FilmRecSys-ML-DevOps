@@ -14,7 +14,7 @@ app  = FastAPI(
 
 
 df   = pd.read_csv('data/movies_dataset_cleaned.csv') 
-df_r = pd.read_csv('data/movies_dataset_reduced.csv') 
+df_r = pd.read_csv('data/movies_dataset_reduced.csv') #Dataset reducido con solo 3 columnas
 
 
 @app.get("/peliculas_mes/{mes}")
