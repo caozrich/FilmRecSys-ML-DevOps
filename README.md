@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
 ## Contenido
-- [Description](#Descripción)
+- [Descripción](#Descripción)
 - [Pipeline](#Pipeline)
 - [ETL](#Extracción-Transformación-y-Carga-ETL)
 - [EDA](#Análisis-Exploratorio-de-Datos-EDA)
