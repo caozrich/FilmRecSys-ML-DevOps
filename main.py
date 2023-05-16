@@ -201,7 +201,7 @@ async def retorno(pelicula:str):
         - 'año': int, el año de lanzamiento de la película.
 
     Ejemplo de uso:
-    > Toy Story 2
+    >>> Toy Story 2
 
     """ 
         
