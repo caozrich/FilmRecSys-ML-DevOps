@@ -66,6 +66,20 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 - Guardar el conjunto de datos limpio en un nuevo archivo CSV: Después de realizar todas las transformaciones y procesamientos necesarios en los datos, se guarda el conjunto de datos limpio en un nuevo archivo CSV. Esto asegura que los datos preprocesados estén disponibles para su uso posterior, sin la necesidad de repetir todo el proceso de limpieza y transformación cada vez que se ejecute el proyecto. 
 
 ## Análisis Exploratorio de Datos (EDA):
+[Acede aquí al júpiter notebook](https://github.com/caozrich/FilmRecSys-ML-DevOps/blob/main/EDA.ipynb)
 
+### 1.Exploración y Visualización del Conjunto de Datos:
+
+- Visualización de las primeras filas del conjunto de datos (`df.head(5)`)
+
+- Resumen estadístico del conjunto de datos (`df.describe()`)
+
+- Información general sobre el conjunto de datos (`df.info()`)
+
+### 2. Relación entre variables
+
+- Relación entre número de películas y puntaje de votación: Se examina la relación entre el número de películas y el puntaje de votación para obtener una comprensión general de la distribución de las calificaciones de las películas. Se llega a la conclusión de que la mayoría de las películas tienen un puntaje promedio alrededor de 6, lo que indica una calificación moderada. Sin embargo, se observa un número significativo de películas con puntaje 0, que podrían considerarse como `outliers` en la distribución. Esta información proporciona una idea inicial sobre la calidad de las películas en el conjunto de datos.
+
+- Presupuesto por año: Se analiza la relación entre el presupuesto y el año de estreno de las películas para identificar patrones o tendencias. En la gráfica se observa que la cantidad de películas estrenadas alcanza su punto máximo en 2018 y luego experimenta un descenso abrupto en 2019. Este descenso podría considerarse como un `outlier` en los datos. Una posible explicación de este fenómeno es la influencia de la pandemia ocurrida en ese año, la cual tuvo un impacto negativo en la industria cinematográfica y actividades relacionadas en general. Esta observación destaca la importancia de tener en cuenta factores externos que pueden afectar el presupuesto y la producción de películas en determinados años.
 
 
