@@ -69,6 +69,9 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 ## Análisis Exploratorio de Datos (EDA):
 [Acede aquí al júpiter notebook](https://github.com/caozrich/FilmRecSys-ML-DevOps/blob/main/EDA.ipynb)
 
+
+<img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/8864de30-9f61-4b08-8dbb-a9c227d7fd0f" width="800" height="538"/>
+
 ### 1.Exploración y Visualización del Conjunto de Datos:
 
 - Visualización de las primeras filas del conjunto de datos (`df.head(5)`)
