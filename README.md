@@ -113,37 +113,37 @@ Para disponibilizar los datos de la empresa, se propone utilizar el framework Fa
 
 A continuación, se describen las funciones disponibles en el API:
 
-* 1. Obtener cantidad de películas estrenadas por mes
+* Obtener cantidad de películas estrenadas por mes
    * Endpoint: `/peliculas_mes/{mes}`
 
    Descripción: Esta función recibe como parámetro el nombre del mes (por ejemplo, 'enero') y retorna la cantidad de películas que se estrenaron históricamente en ese mes.
 
-* 2. Obtener cantidad de películas estrenadas por día de la semana
+* Obtener cantidad de películas estrenadas por día de la semana
    * Endpoint: `/peliculas_dia/{dia}`
 
    Descripción: Esta función recibe como parámetro el día de la semana (por ejemplo, 'lunes') y retorna la cantidad de películas que se estrenaron históricamente en ese día.
 
-* 3. Obtener información de una franquicia
+* Obtener información de una franquicia
    * Endpoint: `/franquicia/{franquicia}`
 
    Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
 
-* 4. Obtener cantidad de películas producidas en un país
+* Obtener cantidad de películas producidas en un país
    * Endpoint: `/peliculas_pais/{pais}`
 
    Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
 
-* 5. Obtener información de una productora
+* Obtener información de una productora
    * Endpoint: `/productoras/{productora}`
 
    Descripción: Esta función recibe como parámetro el nombre de una productora y retorna la ganancia total y la cantidad de películas producidas por esa productora.
 
-* 6. Obtener información de retorno de una película
+* Obtener información de retorno de una película
    * Endpoint: `/retorno/{pelicula}`
 
     Descripción: Esta función recibe como parámetro el nombre de una película y retorna la inversión, la ganancia, el retorno y el año en que se lanzó.
 
-* 7. Obtener recomendaciones de películas similares
+* Obtener recomendaciones de películas similares
    * Endpoint: `/recomendacion/{selected_title}`
 
     Descripción: Esta función recibe el título de una película y devuelve una lista de 5 pelicula recomendadas por similitud y puntaje.
