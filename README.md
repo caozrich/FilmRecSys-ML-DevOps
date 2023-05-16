@@ -1,2 +1,1 @@
-# FilmRecSys-ML-DevOps
-En este proyecto se implementan las habilidades de un MLOps Engineer para implementar un sistema de recomendación de películas utilizando aprendizaje automático (machine learning).
+# <h1 align=center style="color: #FF2403">Movie Recomendation System - MLOps Engineer</h1>
