@@ -192,7 +192,7 @@ Si estás interesado en desarrollar habilidades como MLOps Engineer, este proyec
 * Cree una nueva rama con su característica o corrección
 * Realice sus cambios y asegúrese de seguir las mejores prácticas de codificación y documentación
 * Realice un pull request y espere la revisión y aprobación.
-* 
+
 ## Licencia
 
 * Este proyecto está licenciado bajo la licencia MIT [MIT](https://opensource.org/licenses/MIT)
