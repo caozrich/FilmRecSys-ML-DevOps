@@ -184,3 +184,19 @@ Se desarrolló una aplicación web con interfaz de recomendación de películas 
 3. Se incluye una clave API con este proyecto. Si deseas utilizar tu propia clave API, puedes obtener una en  [TMDB's API](https://developers.themoviedb.org/3/getting-started/introduction). Reemplaza todo desde  ```api_key=```.
 4. Ejecuta la aplicación con streamlit run streamlit_app.py. La aplicación se abrirá en tu navegador web local.
 
+## Contribuciones
+
+Si estás interesado en desarrollar habilidades como MLOps Engineer, este proyecto de código abierto es perfecto para ti. Estoy abierto a contribuciones y sugerencias, por lo que si deseas colaborar, sigue las siguientes instrucciones:
+
+* Haga un fork del repositorio
+* Cree una nueva rama con su característica o corrección
+* Realice sus cambios y asegúrese de seguir las mejores prácticas de codificación y documentación
+* Realice un pull request y espere la revisión y aprobación.
+* 
+## Licencia
+
+* Este proyecto está licenciado bajo la licencia MIT [MIT](https://opensource.org/licenses/MIT)
+
+## Contacto
+
+Si tiene alguna pregunta o comentario sobre este proyecto, no dude en ponerse en contacto a través de un mensaje directo a mi correo `libreros00@gmail.com` o abriendo un issue en este repositorio.
