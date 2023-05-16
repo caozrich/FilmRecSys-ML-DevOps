@@ -65,6 +65,7 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 - Guardar el conjunto de datos limpio en un nuevo archivo CSV: Después de realizar todas las transformaciones y procesamientos necesarios en los datos, se guarda el conjunto de datos limpio en un nuevo archivo CSV. Esto asegura que los datos preprocesados estén disponibles para su uso posterior, sin la necesidad de repetir todo el proceso de limpieza y transformación cada vez que se ejecute el proyecto. 
 
+
 ## Análisis Exploratorio de Datos (EDA):
 [Acede aquí al júpiter notebook](https://github.com/caozrich/FilmRecSys-ML-DevOps/blob/main/EDA.ipynb)
 
@@ -88,7 +89,7 @@ outliers:
 
 ### 3. Correlaciones
 
-#### Variables con mayor correlación
+#### Variables con mayor correlación:
 
 ```
 Variables más correlacionadas:
