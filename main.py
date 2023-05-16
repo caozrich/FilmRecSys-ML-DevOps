@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from fastapi import FastAPI
 from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import OneHotEncoder
+
 
 app  = FastAPI(
     title="API películas",
