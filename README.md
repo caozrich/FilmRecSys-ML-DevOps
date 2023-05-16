@@ -113,20 +113,20 @@ Para disponibilizar los datos de la empresa, se propone utilizar el framework Fa
 
 A continuación, se describen las funciones disponibles en el API:
 
-* Obtener cantidad de películas estrenadas por mes
-   * *Endpoint: `/peliculas_mes/{mes}`
+* 1. Obtener cantidad de películas estrenadas por mes
+   * Endpoint: `/peliculas_mes/{mes}`
 
-Descripción: Esta función recibe como parámetro el nombre del mes (por ejemplo, 'enero') y retorna la cantidad de películas que se estrenaron históricamente en ese mes.
+   Descripción: Esta función recibe como parámetro el nombre del mes (por ejemplo, 'enero') y retorna la cantidad de películas que se estrenaron históricamente en ese mes.
 
-### 2. Obtener cantidad de películas estrenadas por día de la semana
-Endpoint: `/peliculas_dia/{dia}`
+* 2. Obtener cantidad de películas estrenadas por día de la semana
+   * Endpoint: `/peliculas_dia/{dia}`
 
-Descripción: Esta función recibe como parámetro el día de la semana (por ejemplo, 'lunes') y retorna la cantidad de películas que se estrenaron históricamente en ese día.
+   Descripción: Esta función recibe como parámetro el día de la semana (por ejemplo, 'lunes') y retorna la cantidad de películas que se estrenaron históricamente en ese día.
 
-### 3. Obtener información de una franquicia
-Endpoint: `/franquicia/{franquicia}`
+* 3. Obtener información de una franquicia
+   * Endpoint: `/franquicia/{franquicia}`
 
-Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
+   Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
 
 ### 4. Obtener cantidad de películas producidas en un país
 Endpoint: `/peliculas_pais/{pais}`
