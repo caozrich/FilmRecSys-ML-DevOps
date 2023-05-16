@@ -235,7 +235,7 @@ async def recomendacion(selected_title: str):
     selected_title = selected_title.lower()  # Convertir el título ingresado a minúsculas 
     
     k = 6
-    generos_df = pd.read_csv('data/genres_binary.csv, index_col=0).astype('float32')
+    generos_df = pd.read_csv('data/genres_binary.csv', index_col=0).astype('float32')
 
     df_r['title_lower'] = df_r['title'].str.lower()  # Convertir los valores de "title" a minúsculas
     selected_genres = df_r.loc[df_r['title_lower'] == selected_title]['genres'].values
