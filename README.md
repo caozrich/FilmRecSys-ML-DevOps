@@ -200,7 +200,7 @@ Si estás interesado en desarrollar habilidades como MLOps Engineer, este proyec
 
 ## Licencia
 
-* Este proyecto está licenciado bajo la licencia MIT [MIT](https://opensource.org/licenses/MIT)
+* Este proyecto está licenciado bajo la licencia [MIT](https://opensource.org/licenses/MIT)
 
 ## Contacto
 
