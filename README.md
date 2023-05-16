@@ -78,7 +78,7 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 ### 2. Relación entre variables
 
-#### outliers:
+outliers:
 
 - Relación entre número de películas y puntaje de votación: Se examina la relación entre el número de películas y el puntaje de votación para obtener una comprensión general de la distribución de las calificaciones de las películas. Se llega a la conclusión de que la mayoría de las películas tienen un puntaje promedio alrededor de 6, lo que indica una calificación moderada. Sin embargo, se observa un número significativo de películas con puntaje 0, que podrían considerarse como `outliers` en la distribución. Esta información proporciona una idea inicial sobre la calidad de las películas en el conjunto de datos.
 
@@ -86,4 +86,18 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 - Cantidad de películas estrenadas por año: Se examina la cantidad de películas estrenadas por año para analizar la evolución de la producción cinematográfica a lo largo del tiempo. En la gráfica, se aprecia claramente un descenso en la cantidad de películas estrenadas en el año 2019. Esta observación coincide con la conclusión anterior sobre la relación entre el presupuesto y el año de estreno de las películas. El descenso en la cantidad de películas estrenadas en 2019 puede estar relacionado con la influencia de la pandemia, la cual afectó negativamente la producción y distribución de películas. Estas dos gráficas juntas refuerzan la idea de que el año 2019 fue `atípico` en la industria cinematográfica debido a factores externos.
 
+### 3. Correlaciones
 
+#### Variables con mayor correlación
+
+```
+Variables más correlacionadas:
+revenue - budget: 0.7683533474519021
+popularity - revenue: 0.5051410846102767
+revenue - popularity: 0.5051410846102767
+budget - popularity: 0.4469396146589477
+release_year - id: 0.30150514963953473
+vote_average - popularity: 0.148352941806674
+```
+
+- Se observa una relación significativa entre el presupuesto y las ganancias de las películas, así como entre las ganancias y la popularidad. Estas correlaciones indican que, en general, a medida que aumenta el presupuesto invertido en una película, también tienden a aumentar las ganancias generadas por la misma. Además, existe una tendencia a que las películas más populares sean las que generan mayores ganancias.
