@@ -82,13 +82,15 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 ### 2. Relación entre variables
 
-outliers:
+* Outliers:
 
-- Relación entre número de películas y puntaje de votación: Se examina la relación entre el número de películas y el puntaje de votación para obtener una comprensión general de la distribución de las calificaciones de las películas. Se llega a la conclusión de que la mayoría de las películas tienen un puntaje promedio alrededor de 6, lo que indica una calificación moderada. Sin embargo, se observa un número significativo de películas con puntaje 0, que podrían considerarse como `outliers` en la distribución. Esta información proporciona una idea inicial sobre la calidad de las películas en el conjunto de datos.
+  Se identificaron outliers en el conjunto de datos en los siguientes aspectos:
 
-- Presupuesto por año: Se analiza la relación entre el presupuesto y el año de estreno de las películas para identificar patrones o tendencias. En la gráfica se observa que la cantidad de películas estrenadas alcanza su punto máximo en 2018 y luego experimenta un descenso abrupto en 2019. Este descenso podría considerarse como un `outlier` en los datos. Una posible explicación de este fenómeno es la influencia de la pandemia ocurrida en ese año, la cual tuvo un impacto negativo en la industria cinematográfica y actividades relacionadas en general. Esta observación destaca la importancia de tener en cuenta factores externos que pueden afectar el presupuesto y la producción de películas en determinados años.
+  *Relación entre número de películas y puntaje de votación: La mayoría de las películas tienen un puntaje promedio alrededor de 6, indicando una calificación moderada. Sin embargo, un número significativo de películas tienen un puntaje de 0, considerados outliers en la distribución.
 
-- Cantidad de películas estrenadas por año: Se examina la cantidad de películas estrenadas por año para analizar la evolución de la producción cinematográfica a lo largo del tiempo. En la gráfica, se aprecia claramente un descenso en la cantidad de películas estrenadas en el año 2019. Esta observación coincide con la conclusión anterior sobre la relación entre el presupuesto y el año de estreno de las películas. El descenso en la cantidad de películas estrenadas en 2019 puede estar relacionado con la influencia de la pandemia, la cual afectó negativamente la producción y distribución de películas. Estas dos gráficas juntas refuerzan la idea de que el año 2019 fue `atípico` en la industria cinematográfica debido a factores externos.
+  *Presupuesto por año: La cantidad de películas estrenadas alcanza su máximo en 2018 y experimenta un descenso abrupto en 2019, lo cual puede considerarse un outlier en los datos. Esto podría ser atribuido a la influencia negativa de la pandemia en la industria cinematográfica.
+
+  *Cantidad de películas estrenadas por año: Se observa un descenso en la cantidad de películas estrenadas en 2019, coincidiendo con la conclusión anterior sobre el presupuesto. Esto sugiere que el año 2019 fue atípico en la producción cinematográfica debido a la influencia de la pandemia.
 
 ### 3. Correlaciones
 
