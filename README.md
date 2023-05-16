@@ -3,6 +3,12 @@
 ![Python version](https://img.shields.io/badge/Python-3.11.0-lightgrey) ![AppFramework](https://img.shields.io/badge/libs-pandas-blue) ![API](https://img.shields.io/badge/-fast--api-blue) ![ML](https://img.shields.io/badge/-scikit--learn-orange) ![ML](https://img.shields.io/badge/-uvicorn-brightgreen) ![AppFramework](https://img.shields.io/badge/-streamlit-yellow) ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
+<p align="center">
+  <img alt="Files Logo" src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/782538f7-6fe1-42c7-a841-1050ab696151" width="450" />
+  <h2 align="center">Ether Phishing Classifier</h2>
+</p>
+
+
 ## Contenido
 - [Description](#Descripción del proyecto)
 - [About](#About)
