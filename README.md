@@ -184,6 +184,9 @@ else:
 
 Se desarrolló una aplicación web con interfaz de recomendación de películas utilizando `Streamlit` que obtiene la lista de recomendación directamente desde el API subida a RENDER, Los usuarios pueden ingresar el título de una película y recibir una lista de 5 películas recomendadas basadas en similitud y puntaje, Los algoritmos de aprendizaje automático del API se encargan de generar las recomendaciones. La interfaz es intuitiva y fácil de usar.
 
+
+- Accede a la app desplegada en la Streamlit Cloud (https://caozrich-streamlit-0341-streamlit-app-5cue6s.streamlit.app/)
+
 ### Uso
 1. Clona el repositorio a través de ``` https://github.com/YohanV1/TheMovieRecommender.git```  o descarga el repositorio.
  > Nota: La clonación del repositorio puede llevar algo de tiempo debido a que los conjuntos de datos son relativamente grandes.
