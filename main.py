@@ -175,8 +175,8 @@ async def productoras(productora:str):
     df_filtered = df[mask].dropna(subset=['production_companies'])
 
 
-    ganancia_total = df_filtered['revenue'].sum()
-    cantidad = len(df_filtered)
+    ganancia_total = float(df_filtered['revenue'].sum())
+    cantidad = int(len(df_filtered))
 
     return {'productora': productora, 'ganancia_total': int(ganancia_total), 'cantidad': cantidad}
 
