@@ -7,14 +7,13 @@ from tmdbv3api import Movie
 tmdb = TMDb()
 tmdb.api_key = "" # Tu api key de tmbd 
 
-
 API_URL = "https://pimlops-richardl.onrender.com/recomendacion/"
 
 def obtener_recomendaciones(pelicula):
     """
     Esta función realiza una solicitud a la API desarrollada y alojada en Render para obtener recomendaciones de películas.
     
-    """    
+    """
     url = API_URL + pelicula
     response = requests.get(url)
     if response.status_code == 200:
@@ -22,7 +21,7 @@ def obtener_recomendaciones(pelicula):
 
         movie = Movie()
         peliculas_recomendadas = []
-        for titulo in data:
+        for titulo in data['lista recomendada']:
             search = movie.search(titulo)
             if search:
                 pelicula_recomendada = {
@@ -36,6 +35,7 @@ def obtener_recomendaciones(pelicula):
         return peliculas_recomendadas
     else:
         st.error(f"Error: {response.status_code}")
+        
         
 apply_styles()
 
