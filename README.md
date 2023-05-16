@@ -131,21 +131,21 @@ A continuación, se describen las funciones disponibles en el API:
    Descripción: Esta función recibe como parámetro el día de la semana (por ejemplo, 'lunes') y retorna la cantidad de películas que se estrenaron históricamente en ese día.
 
 * Obtener información de una franquicia
-   * Endpoint: `/franquicia/{franquicia}` (https://pimlops-richardl.onrender.com/franquicia/Toy Story Collection)
+   * Endpoint: `/franquicia/{franquicia}` (https://pimlops-richardl.onrender.com/franquicia/Toy%20Story%20Collection)
 
    Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
 
 * Obtener cantidad de películas producidas en un país
-   * Endpoint: `/peliculas_pais/{pais}` (https://pimlops-richardl.onrender.com/pelipeliculas_paisulas_pais/United States of America)
+   * Endpoint: `/peliculas_pais/{pais}` (https://pimlops-richardl.onrender.com/pelipeliculas_paisulas_pais/United%20States%20of%20America)
 
    Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
 
 * Obtener información de una productora
-   * Endpoint: `/productoras/{productora}` (https://pimlops-richardl.onrender.com/productoras/Toy Story')
+   * Endpoint: `/productoras/{productora}` (https://pimlops-richardl.onrender.com/productoras/Pixar%20Animation%20Studios')
 
    Descripción: Esta función recibe como parámetro el nombre de una productora y retorna la ganancia total y la cantidad de películas producidas por esa productora.
 
-* Obtener información de retorno de una película  (https://pimlops-richardl.onrender.com/retorno/)
+* Obtener información de retorno de una película  (https://pimlops-richardl.onrender.com/retorno/Toy%20Story')
    * Endpoint: `/retorno/{pelicula}`
 
     Descripción: Esta función recibe como parámetro el nombre de una película y retorna la inversión, la ganancia, el retorno y el año en que se lanzó.
