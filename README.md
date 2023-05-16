@@ -153,6 +153,24 @@ A continuación, se describen las funciones disponibles en el API:
 
 ## DEPLOYMENT DEL API
 
-El deployment del API se realizó utilizando el servicio web [Render]( https://render.com/), el cual facilita la implementación ya que no necesita dockerizacion.
+###El deployment del API se realizó utilizando el servicio web [Render]( https://render.com/), el cual facilita la implementación ya que no necesita dockerizacion.
 
-https://pimlops-richardl.onrender.com
+- El API puede ser consumido desde el siguiente enlace: https://pimlops-richardl.onrender.com
+- Documentación del API: https://pimlops-richardl.onrender.com/docs
+- Acceder desde python usando `request`:
+
+```python
+import requests
+
+url = "https://pimlops-richardl.onrender.com/recomendacion/{nombrepelicula}"
+nombre_pelicula = "nombre_de_la_pelicula"
+response = requests.get(url.format(nombrepelicula=nombre_pelicula))
+
+if response.status_code == 200:
+    data = response.json()
+    lista_recomendada = data['lista recomendada']
+    print(lista_recomendada)
+else:
+    print("Error en la solicitud:", response.status_code)
+```
+
