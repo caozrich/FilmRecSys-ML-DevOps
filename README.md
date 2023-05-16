@@ -180,7 +180,7 @@ else:
 ```
 ## Aplicación Web:
 
-<img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/b420beb7-718e-412a-992b-ff8a39fb998c" width="800" height="538"/>
+<img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/b420beb7-718e-412a-992b-ff8a39fb998c" width="700" height="438"/>
 
 Se desarrolló una aplicación web con interfaz de recomendación de películas utilizando `Streamlit`, Los usuarios pueden ingresar el título de una película y recibir una lista de 5 películas recomendadas basadas en similitud y puntaje, Los algoritmos de aprendizaje automático del API se encargan de generar las recomendaciones. La interfaz es intuitiva y fácil de usar.
 
