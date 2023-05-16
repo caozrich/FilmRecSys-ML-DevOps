@@ -206,10 +206,10 @@ async def retorno(pelicula:str):
     """ 
         
     pelicula_data = df.loc[df['title'] == pelicula]
-    inversion = pelicula_data['budget'].iloc[0]
-    ganancia = pelicula_data['revenue'].iloc[0]
-    retorno = pelicula_data['return'].iloc[0]
-    año = pelicula_data['release_year'].iloc[0]
+    inversion = int(pelicula_data['budget'].iloc[0])
+    ganancia = int(pelicula_data['revenue'].iloc[0])
+    retorno = float(pelicula_data['return'].iloc[0])
+    año = str(pelicula_data['release_year'].iloc[0])
     
     return {'pelicula': pelicula, 'inversion': inversion, 'ganancia': ganancia, 'retorno': retorno, 'año': año}
 
