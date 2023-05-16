@@ -34,6 +34,8 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 <img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/0148eb2b-3380-47a9-a36d-0c10975cc86f" width="800" height="538"/>
 
 ## Extracción, Transformación y Carga (ETL):
+[Acede aqui al jupiter notebook](https://github.com/caozrich/FilmRecSys-ML-DevOps/blob/main/ETL.ipynb)
+
 ### 1. Preparación inicial de datos
 
 - Imports y Carga de Datos: Se importan las bibliotecas y módulos necesarios para el proyecto, y se carga el conjunto de datos desde un archivo CSV.
@@ -57,9 +59,13 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de `Data 
 
 ### 3. Procesamiento de datos anidados
 
--Procesar datos anidados y extraer información relevante: se aborda el desafío de los datos anidados presentes en el conjunto de datos. Se realiza un procesamiento específico para extraer la información relevante de los campos anidados. Esto implica desglosar estructuras de datos complejas y extraer los atributos necesarios para el modelo de recomendación de películas.
+- Procesar datos anidados y extraer información relevante: se aborda el desafío de los datos anidados presentes en el conjunto de datos. Se realiza un procesamiento específico para extraer la información relevante de los campos anidados. Esto implica desglosar estructuras de datos complejas y extraer los atributos necesarios para el modelo de recomendación de películas.
 
 ### 4. Exportación
 
 - Guardar el conjunto de datos limpio en un nuevo archivo CSV: Después de realizar todas las transformaciones y procesamientos necesarios en los datos, se guarda el conjunto de datos limpio en un nuevo archivo CSV. Esto asegura que los datos preprocesados estén disponibles para su uso posterior, sin la necesidad de repetir todo el proceso de limpieza y transformación cada vez que se ejecute el proyecto. 
+
+## Análisis Exploratorio de Datos (EDA):
+
+
 
