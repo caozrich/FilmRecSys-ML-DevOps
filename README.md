@@ -34,9 +34,8 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 <img src="https://github.com/caozrich/FilmRecSys-ML-DevOps/assets/34092193/0148eb2b-3380-47a9-a36d-0c10975cc86f" width="800" height="538"/>
 
 ## Extracción, Transformación y Carga (ETL):
-`EXTRACCIÓN DE DATOS`
+`1. Preparación inicial de datos`
 
-1. Preparación inicial de datos
 - Imports: Se importan las bibliotecas y módulos necesarios para el proyecto.
 - Eliminación de duplicados: Se verifica y elimina cualquier registro duplicado en el conjunto de datos.
 - Verificación de valores nulos: Se identifican las columnas que contienen valores nulos en el conjunto de datos.
