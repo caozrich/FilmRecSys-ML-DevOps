@@ -246,7 +246,7 @@ async def recomendacion(selected_title:str):
     recommended_movies = list(df_r.iloc[indices]['title'])
     recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
     
-    return recommended_movies[:5]
+    return {'lista recomendada': recommended_movies[0:5]}
         
 
 # import asyncio
