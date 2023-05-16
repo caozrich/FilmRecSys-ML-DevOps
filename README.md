@@ -128,21 +128,24 @@ A continuación, se describen las funciones disponibles en el API:
 
    Descripción: Esta función recibe como parámetro el nombre de una franquicia y retorna la cantidad de películas de esa franquicia, la ganancia total y el promedio de ganancia.
 
-### 4. Obtener cantidad de películas producidas en un país
-Endpoint: `/peliculas_pais/{pais}`
+* 4. Obtener cantidad de películas producidas en un país
+   * Endpoint: `/peliculas_pais/{pais}`
 
-Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
+   Descripción: Esta función recibe como parámetro el nombre de un país y retorna la cantidad de películas producidas en ese país.
 
-### 5. Obtener información de una productora
-Endpoint: `/productoras/{productora}`
+* 5. Obtener información de una productora
+   * Endpoint: `/productoras/{productora}`
 
-Descripción: Esta función recibe como parámetro el nombre de una productora y retorna la ganancia total y la cantidad de películas producidas por esa productora.
+   Descripción: Esta función recibe como parámetro el nombre de una productora y retorna la ganancia total y la cantidad de películas producidas por esa productora.
 
-### 6. Obtener información de retorno de una película
-Endpoint: `/retorno/{pelicula}`
+* 6. Obtener información de retorno de una película
+   * Endpoint: `/retorno/{pelicula}`
 
-Descripción: Esta función recibe como parámetro el nombre de una película y retorna la inversión, la ganancia, el retorno y el año en que se lanzó.
+    Descripción: Esta función recibe como parámetro el nombre de una película y retorna la inversión, la ganancia, el retorno y el año en que se lanzó.
 
-### 7. Obtener información de retorno de una película
-Endpoint: /retorno/{pelicula}
+* 7. Obtener recomendaciones de películas similares
+   * Endpoint: `/recomendacion/{selected_title}`
+
+    Descripción: Esta función recibe el título de una película y devuelve una lista de 5 pelicula recomendadas por similitud y puntaje.
+    Parámetros.
 
