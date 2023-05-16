@@ -1,9 +1,7 @@
 import ast
-import joblib
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI
-from scipy.sparse import save_npz, load_npz
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import OneHotEncoder
 
@@ -232,17 +230,15 @@ async def recomendacion(selected_title:str):
 
     """
     k = 6
+    generos_df = pd.read_csv('data/genres_binary.csv', index_col=0).astype('float32')
 
-    generos_df = pd.read_pickle('data/generos_df.pkl') # generos_df = pd.DataFrame(genres_encoded.toarray(), columns=encoder.get_feature_names_out(['genres_str']))
     selected_genres = df_r.loc[df_r['title'] == selected_title]['genres'].values[0]
     df_r['genre_similarity'] = df_r['genres'].apply(lambda x: len(set(selected_genres) & set(x)) / len(set(selected_genres) | set(x)))
-    df_r['same_series'] = df_r['title'].apply(lambda x: 1 if selected_title in x else 0)
-    features_df = pd.concat([generos_df, df_r['vote_average'], df_r['genre_similarity'], df_r['same_series']], axis=1)
+    features_df = pd.concat([generos_df, df_r['vote_average'], df_r['genre_similarity']], axis=1)
     knn = NearestNeighbors(n_neighbors=k+1, algorithm='auto')
     knn.fit(features_df)
     indices = knn.kneighbors(features_df.loc[df_r['title'] == selected_title])[1].flatten()
     recommended_movies = list(df_r.iloc[indices]['title'])
-    recommended_movies = sorted(recommended_movies, key=lambda x: (df_r.loc[df_r['title'] == x]['same_series'].values[0], df_r.loc[df_r['title'] == x]['vote_average'].values[0], df_r.loc[df_r['title'] == x]['genre_similarity'].values[0]), reverse=True)
     recommended_movies = [movie for movie in recommended_movies if movie != selected_title]
     return {'lista recomendada': recommended_movies[0:5]}
         
