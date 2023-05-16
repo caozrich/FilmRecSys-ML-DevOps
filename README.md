@@ -41,7 +41,7 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 - Verificación de valores nulos: Se identifican las columnas que contienen valores nulos en el conjunto de datos.
 - Tratamiento de valores nulos: Se lleva a cabo un tratamiento para reemplazar o eliminar los valores nulos en las columnas relevantes.
 
-`3. Ingesta de datos (Archivos .csv provistos por el cliente) en respectivos dataframes (Disney, Amazon, Hulu y Netflix)`
+`2. Transformación y manipulación de datos`
 
 - Eliminar columnas que no se utilizarán: Se eliminan del conjunto de datos aquellas columnas que no son relevantes para el análisis o el modelo de recomendación. Esto ayuda a reducir la dimensionalidad y enfocarse en las características más importantes.
 
@@ -53,5 +53,13 @@ Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data E
 
 - Conversión de tipos de datos: Se realiza la conversión de los tipos de datos de ciertas columnas numéricas que pueden convertirse a tipos de datos numéricos apropiados para un análisis más preciso.
 
-Crear una nueva columna 'return' que calcule el retorno de inversión (revenue / budget): Se crea una nueva columna llamada 'return' que calcula el retorno de inversión dividiendo los ingresos ('revenue') por el presupuesto ('budget'). Esta columna proporciona información sobre la rentabilidad de cada película y puede ser útil para el proceso de recomendación.
-4. Análisis exploratorio de los distintos datasets para conocer sus características principales
+- Crear una nueva columna 'return' que calcule el retorno de inversión (revenue / budget): Se crea una nueva columna llamada 'return' que calcula el retorno de inversión dividiendo los ingresos ('revenue') por el presupuesto ('budget'). Esta columna proporciona información sobre la rentabilidad de cada película y puede ser útil para el proceso de recomendación.
+
+`3. Procesamiento de datos anidados`
+
+-Procesar datos anidados y extraer información relevante: se aborda el desafío de los datos anidados presentes en el conjunto de datos. Se realiza un procesamiento específico para extraer la información relevante de los campos anidados. Esto implica desglosar estructuras de datos complejas y extraer los atributos necesarios para el modelo de recomendación de películas.
+
+`4. Exportación`
+
+- Guardar el conjunto de datos limpio en un nuevo archivo CSV: Después de realizar todas las transformaciones y procesamientos necesarios en los datos, se guarda el conjunto de datos limpio en un nuevo archivo CSV. Esto asegura que los datos preprocesados estén disponibles para su uso posterior, sin la necesidad de repetir todo el proceso de limpieza y transformación cada vez que se ejecute el proyecto. 
+
