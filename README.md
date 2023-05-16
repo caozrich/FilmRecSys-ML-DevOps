@@ -17,7 +17,7 @@ Este proyecto tiene como objetivo implementar un sistema de recomendación de pe
 
 ### Descripción del Problema
 
-El contexto de este proyecto se encuentra en una start-up que ofrece servicios de agregación de plataformas de streaming. Como Data Scientist, el rol consiste en desarrollar un sistema de recomendación que aún no ha sido implementado. El desafío es transformar los datos disponibles, que presentan problemas de madurez, en un formato adecuado para el entrenamiento y mantenimiento del modelo de Machine Learning.
+El contexto de este proyecto se encuentra en una start-up que ofrece servicios de agregación de plataformas de streaming. Como Data Scientist, el rol consiste en desarrollar un sistema de recomendación que aún no ha sido implementado. El desafío es transformar los '[datos disponibles](https://github.com/caozrich/FilmRecSys-ML-DevOps/tree/main/data)', que presentan problemas de madurez, en un formato adecuado para el entrenamiento y mantenimiento del modelo de Machine Learning.
 
 ### Rol a Desarrollar
 Como Data Scientist en esta start-up, se requiere llevar a cabo tareas de Data Engineering para tratar y recolectar los datos existentes. Esto implica realizar procesos de transformación, automatizar la actualización de nuevos datos y asegurar la calidad de los mismos. El objetivo es desarrollar un Minimum Viable Product (MVP), lo que requiere un trabajo rápido y eficiente en la ingeniería de datos.
